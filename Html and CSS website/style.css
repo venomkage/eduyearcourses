@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Montserrat, arial;
+  scrollbar-width: none;
+  color: white;
+}
+
+.top {
+  height: 45px;
+  width: 45px;
+  background-color: #0c8775;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  position: fixed;
+  z-index: 9;
+}
+
+.top i {
+  z-index: 10;
+}
+
+.opacity {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: rgba(23, 23, 23, 0.72);
+}
+/* Main Section */
+
+.main-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: url(./sources/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 0 1.2rem;
+  height: 10%;
+  z-index: 9;
+  background-color: #0c8775;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 21rem;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 450;
+}
+
+.nav-items li a:hover {
+  color: #232323;
+}
+
+.main-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-section p {
+  font-size: 3.6rem;
+  font-weight: 450;
+  margin-bottom: 3rem;
+}
+
+.buttons a {
+  border-radius: 6px;
+  font-weight: 450;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+.buttons a:nth-child(1) {
+  background: #0c8775;
+  margin-right: 45px;
+  transition: all 0.3s ease-in-out;
+}
+.buttons a:nth-child(1):hover {
+  background: #fff;
+  color: #0c8775;
+}
+
+.buttons a:nth-child(2) {
+  background: #fff;
+  color: #0c8775;
+  transition: all 0.3s ease-in-out;
+}
+.buttons a:nth-child(2):hover {
+  background: #0c8775;
+  color: #fff;
+  padding: 12px 18px;
+}
+
+/* Projects Section */
+
+.project-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #232323;
+  border-bottom: solid 3px #0c8775;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+}
+
+.project {
+  height: 300px;
+  width: 300px;
+  background: #fff;
+  border-radius: 9px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.project img {
+  height: 80%;
+  width: auto;
+  transition: all 0.24s ease-in-out;
+}
+
+.project img:hover {
+  transform: scale(108%);
+}
+
+.project h3 a {
+  color: #0c8775;
+  text-decoration: none;
+}
+
+.more-projects {
+  border-radius: 6px;
+  font-weight: 450;
+  padding: 12px 18px;
+  text-decoration: none;
+  background-color: #0c8775;
+  transition: all 0.3s ease-in-out;
+}
+
+.more-projects:hover {
+  background-color: #fff;
+  color: #0c8775;
+}
+
+/* Hire Section */
+
+.hire-me-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hire-me-section {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.hire-me-section p {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.hire-me-section form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.hire-me-section form input {
+  color: #232323;
+  padding: 1.5rem;
+  border-radius: 9px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-section form input:focus {
+  box-shadow: 0 0 3px 3px #0c8775;
+}
+
+.hire-me-section form textarea {
+  color: #232323;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 9px;
+}
+
+.hire-me-section form textarea:focus {
+  box-shadow: 0 0 2.7px 2.7px #0c8775;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-section form button {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  background-color: #0c8775;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-section form button:hover {
+  color: #0c8775;
+  background-color: #fff;
+}
+
+.footer-section {
+  background: #0c8775;
+  width: 100%;
+  height: 10%;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  font-size: 1.8rem;
+}
+
+.icons i {
+  margin: 0 9px;
+}
+
+/* Css property for smaller screen size than 480px */
+
+@media screen and (max-width: 480px) {
+  /* Main section */
+  .logo {
+    font-size: 1.2rem;
+  }
+  .nav-items {
+    width: 12rem;
+    font-size: 0.9rem;
+  }
+
+  .main-section p {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    font-size: 0.9rem;
+  }
+
+  /* Projects section */
+  .project {
+    height: 180px;
+    width: 180px;
+  }
+
+  /* Hire me section */
+  .hire-me-section p {
+    font-size: 2.1rem;
+  }
+
+  .hire-me-section form input {
+    padding: 0.75rem;
+  }
+
+  .hire-me-section form textarea {
+    padding: 0.75rem;
+  }
+
+  .hire-me-section form button {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+}

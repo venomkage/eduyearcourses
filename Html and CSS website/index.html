@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <!--Top button-->
+    <a href="#home" class="top"><i class="fas fa-arrow-up"></i></a>
+
+    <!--Opacity-->
+    <div class="opacity"></div>
+
+    <!--Landing Page-->
+    <div id="home" class="main-wrapper">
+      <nav>
+        <div class="logo">
+          <h1>Logo</h1>
+        </div>
+        <div class="nav-links">
+          <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#hire">Hiring</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main-section">
+        <p>
+          Hello, I am Venom Kage. <br />
+          A front-end developer
+        </p>
+        <div class="buttons">
+          <a href="#hire">Hire me</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects Section-->
+    <div id="project" class="project-wrapper">
+      <h1>My Projects</h1>
+      <div class="projects">
+        <div class="project">
+          <img src="./sources/project1.jpg" alt="" />
+          <h3><a href=""> Project 1</a></h3>
+        </div>
+        <div class="project">
+          <img src="./sources/project2.jpg" alt="" />
+          <h3><a href=""> Project 2</a></h3>
+        </div>
+        <div class="project">
+          <img src="./sources/project3.jpg" alt="" />
+          <h3><a href=""> Project 3</a></h3>
+        </div>
+      </div>
+      <a class="more-projects" href="#">More Projects</a>
+    </div>
+
+    <!--Hire me section-->
+    <div id="hire" class="hire-me-wrapper">
+      <div class="hire-me-section">
+        <p>
+          Fill the form, <br />
+          I will be back with a quote
+        </p>
+
+        <form action="">
+          <input type="text" name="name" id="" placeholder="Name" />
+          <input type="email" name="email" id="" placeholder="Name" />
+          <textarea
+            name="work"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Describe the work"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <footer class="footer-section">
+        <div class="icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-stack-overflow"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
